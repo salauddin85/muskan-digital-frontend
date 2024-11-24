@@ -1,0 +1,22 @@
+
+/* Make all cards equal height */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure cards stretch to fill their container */
+}
+
+.card-body {
+    flex-grow: 1; /* Ensure card body expands to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spread content evenly */
+}
+
+/* Ensure images fit consistently */
+.card-img-top {
+    object-fit: cover; /* Maintain aspect ratio */
+    height: 200px; /* Set a fixed height for images */
+    width: 100%; /* Make images take full width */
+}
+
