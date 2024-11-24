@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const fetchUsers = async () => {
         try {
             const token = localStorage.getItem('authToken');
-            const response = await fetch('http://127.0.0.1:8000/auth/custom-users/', {
+            const response = await fetch('https://job-task-muskan-digital.onrender.com/auth/custom-users/', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Token ${token}`,
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('An error occurred while fetching users');
+            // alert('An error occurred while fetching users');
         }
     };
 
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
             formData.append('user', userId);
 
             const token = localStorage.getItem('authToken');
-            const response = await fetch('http://127.0.0.1:8000/auth/modules/', {
+            const response = await fetch('https://job-task-muskan-digital.onrender.com/auth/modules/', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Token ${token}`,
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('An error occurred while adding the module.');
+            // alert('An error occurred while adding the module.');
         }
     });
 });

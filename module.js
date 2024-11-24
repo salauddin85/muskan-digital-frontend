@@ -2,7 +2,7 @@
 const fetchModules = async () => {
     const token = localStorage.getItem('authToken'); // Replace with your actual token
     try {
-        const response = await fetch('http://127.0.0.1:8000/auth/modules/', {
+        const response = await fetch('https://job-task-muskan-digital.onrender.com/auth/modules/', {
             method: 'GET',
             headers: {
                 'Authorization': `Token ${token}`, // Use the token in the Authorization header
@@ -20,7 +20,7 @@ const fetchModules = async () => {
         }
     } catch (error) {
         console.error('Fetch Error:', error);
-        alert('An error occurred while fetching modules.');
+        // alert('An error occurred while fetching modules.');
     }
 };
 

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Send POST request
-        fetch('http://127.0.0.1:8000/auth/custom-users/', {
+        fetch('https://job-task-muskan-digital.onrender.com/auth/custom-users/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Send POST request to login API
-        fetch('http://127.0.0.1:8000/auth/login/', {
+        fetch('https://job-task-muskan-digital.onrender.com/auth/login/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -120,7 +120,7 @@ const handleLogout = () => {
         alert("Token not found Please login")
     }
     // Send POST request to logout API
-    fetch("http://127.0.0.1:8000/auth/logout/", {
+    fetch("https://job-task-muskan-digital.onrender.com/auth/logout/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
